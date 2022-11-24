@@ -1,0 +1,85 @@
+PODS:
+  - Alamofire (5.4.0)
+  - Charts (3.6.0):
+    - Charts/Core (= 3.6.0)
+  - Charts/Core (3.6.0)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - HCVimeoVideoExtractor (0.0.1)
+  - Hero (1.6.1)
+  - Instructions (1.3.1)
+  - JWTDecode (2.6.3)
+  - Localize-Swift (3.2.0):
+    - Localize-Swift/LocalizeSwiftCore (= 3.2.0)
+    - Localize-Swift/UIKit (= 3.2.0)
+  - Localize-Swift/LocalizeSwiftCore (3.2.0)
+  - Localize-Swift/UIKit (3.2.0):
+    - Localize-Swift/LocalizeSwiftCore
+  - NutritionIASDK (1.2.3):
+    - Hero (~> 1.6.1)
+    - JWTDecode (~> 2.6)
+    - Localize-Swift (= 3.2.0)
+  - SwiftDate (6.2.0)
+  - SwiftyJSON (5.0.0)
+  - WorkoutSDK (1.0):
+    - Alamofire (= 5.4.0)
+    - Charts (= 3.6.0)
+    - FMDB (= 2.7.5)
+    - HCVimeoVideoExtractor (= 0.0.1)
+    - Hero
+    - Instructions (= 1.3.1)
+    - JWTDecode (~> 2.6)
+    - Localize-Swift (= 3.2.0)
+    - SwiftDate (= 6.2.0)
+    - SwiftyJSON (= 5.0.0)
+    - YoutubePlayer-in-WKWebView (= 0.3.4)
+  - YoutubePlayer-in-WKWebView (0.3.4)
+
+DEPENDENCIES:
+  - NutritionIASDK (from `https://github.com/miguelmunozfer/VitaleNutritionIASDK`)
+  - WorkoutSDK (from `~/Documents/TrainingSDKCocoaPodsNew/WorkoutSDK.podspec`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Charts
+    - FMDB
+    - HCVimeoVideoExtractor
+    - Hero
+    - Instructions
+    - JWTDecode
+    - Localize-Swift
+    - SwiftDate
+    - SwiftyJSON
+    - YoutubePlayer-in-WKWebView
+
+EXTERNAL SOURCES:
+  NutritionIASDK:
+    :git: https://github.com/miguelmunozfer/VitaleNutritionIASDK
+  WorkoutSDK:
+    :path: "~/Documents/TrainingSDKCocoaPodsNew/WorkoutSDK.podspec"
+
+CHECKOUT OPTIONS:
+  NutritionIASDK:
+    :commit: d1a2913f5bf609160eb69d1153b3bdb1df80dd20
+    :git: https://github.com/miguelmunozfer/VitaleNutritionIASDK
+
+SPEC CHECKSUMS:
+  Alamofire: 3b6a534a3df22db367e4dedeeca73d1ddfcf0e2f
+  Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  HCVimeoVideoExtractor: d3c251280f7027ffd324266e1930b3618e0adb46
+  Hero: 215865ba3ae41dd9bb08cd6c60a645529c6fc94b
+  Instructions: 192615408620838c442a526c4a2961ce3d42b6aa
+  JWTDecode: 33e5e26e5ddbd21b2065820894c08fef0cad9509
+  Localize-Swift: 6f4475136bdb0d7b2882ea3d4ea919d70142b232
+  NutritionIASDK: 653dc1842f93e38844ba457e06f9477cb74ad930
+  SwiftDate: d117c3eb6beed72e47d3f4d1e3bc63fa1e66d7c3
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  WorkoutSDK: fd675ad9058a3b2f9e1d81be746f8dfbad649d73
+  YoutubePlayer-in-WKWebView: af2f5929fc78882d94bfdfeea999b661b78d9717
+
+PODFILE CHECKSUM: b6c3a5108d0f95bcf9086a27b97a307efa993114
+
+COCOAPODS: 1.11.3

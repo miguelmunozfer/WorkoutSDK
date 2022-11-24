@@ -70,7 +70,7 @@ public struct WorkoutSummary : Swift.Codable {
   public func getWorkoutPlan(_ completion: @escaping ((UIKit.UIViewController) -> ()))
   public func getStatsViewController(_ completion: @escaping ((UIKit.UIViewController) -> ()))
   public func getHelpController() -> UIKit.UIViewController
-  public func showTrainingProfileWith(_ completion: @escaping ((UIKit.UIViewController?) -> ()))
+  public func showTrainingProfileViewController()
   public func showTrainingProfileWith(user: Swift.String, sex: Swift.String?, height: Swift.Int?, weigth: Swift.Int?, birthDate: Foundation.Date?, level: Swift.Int?, basalMetabolism: Swift.Int? = nil, _ completion: @escaping ((UIKit.UIViewController?) -> ()))
   public func getTodayStats(_ completion: @escaping ((TrainingSDK.Stat?) -> ()))
   public func getTodayWorkout(_ completion: @escaping ((TrainingSDK.WorkoutSummary?) -> ()))

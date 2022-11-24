@@ -1,0 +1,142 @@
+[{
+        "page": 0,
+        "panels": [
+            {
+                "questions": [{
+                        "title": "Eres hombre o mujer",
+                        "type": "picker",
+                        "identifier": "gender",
+                        "placeholder": "Sexo",
+                        "answers": [{
+                                "title": "Hombre",
+                                "score": 0
+                            },
+                            {
+                                "title": "Mujer",
+                                "score": 1
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Fecha de nacimiento",
+                        "identifier": "dateOfBirth",
+                        "type": "date",
+                        "placeholder": "mm/dd/aaaa"
+                    },
+                    {
+                        "title": "Cuanto mides",
+                        "identifier": "height",
+                        "type": "number",
+                        "placeholder": "cm"
+                    },
+                    {
+                        "title": "Cuanto pesas",
+                        "identifier": "weight",
+                        "type": "number",
+                        "placeholder": "kg"
+                    }
+                ]
+            },
+            {
+                "questions": [{
+                    "title": "Nivel de actividad física",
+                    "identifier": "physicalIntensityID",
+                    "type": "list",
+                    "info": "activity_info",
+                    "isMultipleSelection": false
+                }]
+            }
+        ]
+    },
+    {
+        "page": 1,
+        "panels": [{
+                "questions": [{
+                    "title": "¿Cúal es tu objetivo?",
+                    "identifier": "desiredBalanceID",
+                    "type": "list"
+                }]
+            },
+            {
+                "questions": [{
+                    "title": "¿Alguna preferencia nutricional especial?",
+                    "type": "buttons",
+                    "identifier": "preferences",
+                    "isMultipleSelection": true,
+                    "answers": [{
+                            "title": "Si",
+                            "score": 1,
+                            "hasAnswers": true
+                        },
+                        {
+                            "title": "No",
+                            "score": 0
+                        }
+                    ]
+                }]
+            },
+            {
+                "questions": [{
+                    "title": "¿Alguna alergia o intolerancia?",
+                    "type": "buttons",
+                    "identifier": "intollerance",
+                    "isMultipleSelection": true,
+                    "answers": [{
+                            "title": "Si",
+                            "score": 1,
+                            "hasAnswers": true
+                        },
+                        {
+                            "title": "No",
+                            "score": 0
+                        }
+                    ]
+                }]
+            }
+        ]
+    },
+    {
+        "page": 2,
+        "panels": [{
+                "questions": [{
+                    "title": "¿Cuántas comidas deseas al día?",
+                    "identifier": "distributionByIntakeID",
+                    "type": "list"
+                }]
+            },
+            {
+                "questions": [
+                    {
+                        "title": "¿Cuántos platos quieres en la comida?",
+                        "identifier": "lunchDishes",
+                        "isMultipleSelection": true,
+                        "type": "list"
+                    },
+                    {
+                        "title": "¿Cuántos platos quieres en la cena?",
+                        "identifier": "dinnerDishes",
+                        "isMultipleSelection": true,
+                        "type": "list"
+                    }]
+            },
+            {
+                "questions": [{
+                    "title": "¿Deseas realizar ayuno intermitente?",
+                    "type": "buttons",
+                    "identifier": "intermittentFastingID",
+                    "isMultipleSelection": false,
+                    "answers": [{
+                            "title": "Sim",
+                            "score": 1,
+                            "hasAnswers": true
+                        },
+                        {
+                            "title": "Não",
+                            "score": 0
+                        }
+                    ]
+                }]
+            }
+        ]
+    }
+]

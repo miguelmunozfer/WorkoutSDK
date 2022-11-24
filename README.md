@@ -38,22 +38,28 @@ end
 Use your MyVitale credentials for initiating SDK. Your user_id must be permanent and unique for each App user (any user id, including the ones you are already using in your system,  can be used).
 
 ```swift
-Training.sharedInstance.start(with: user_id, clientId: client_id, clientSecret: client_secret)
+WorkoutSDK.sharedInstance.startSession(appID: "APP_ID", password: "PASSWORD")
 
 ```
+
+### Config user
+
+WorkoutSDK.sharedInstance.updateProfile(user: "USER_ID", sex: "USER_GENDER", height: "USER_HEIGHT", weigth: "USER_WEIGHT", birthDate: USER_BIRTHDATE, level: LEVEL)
+
 
 ### Sport profile
 
 ```swift
-Training.sharedInstance.showSportProfile()
+WorkoutSDK.sharedInstance.showTrainingProfileViewController()
 
 ```
 
-### Intelligent trainer
+### Show weekly workout plan
 
 
 ```swift
-Training.sharedInstance.showVirtualPT()
+WorkoutSDK.sharedInstance.showWorkoutPlan()
+
 
 ```
 
@@ -67,33 +73,6 @@ Main SDK colour can be personalized. All buttons and main elements of the PT mod
 
 ```swift
 Training.sharedInstance.setMainColor(color: mainColor)
-
-```
-
-#### Navigation bar background color
-
-Customize the NavigationBar background colour of the PT module.
-
-```swift
-Training.sharedInstance.setNavigationBarColor(color: backgroundColor)
-
-```
-
-#### Navigation tint color
-
-Customize the NavigationBar  tint colour of the PT module.
-
-```swift
-Training.sharedInstance.setNavigationTintColor(color: tintColor)
-
-```
-
-#### Navigation bar logo
-
-Add your App’s logo to the navigationBar.
-
-```swift
-Training.sharedInstance.setNavigationLogo(color: logo)
 
 ```
 

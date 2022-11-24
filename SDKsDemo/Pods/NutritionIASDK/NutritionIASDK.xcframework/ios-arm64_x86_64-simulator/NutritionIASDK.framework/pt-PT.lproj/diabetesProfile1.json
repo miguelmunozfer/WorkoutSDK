@@ -1,0 +1,142 @@
+[{
+        "page": 0,
+        "panels": [
+            {
+                "questions": [{
+                        "title": "É homem ou mulher?",
+                        "type": "picker",
+                        "identifier": "gender",
+                        "placeholder": "Sexo",
+                        "answers": [{
+                                "title": "Homem",
+                                "score": 0
+                            },
+                            {
+                                "title": "Mulher",
+                                "score": 1
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Data de nascimento",
+                        "identifier": "dateOfBirth",
+                        "type": "date",
+                        "placeholder": "mm/dd/aaaa"
+                    },
+                    {
+                        "title": "Altura (cm)",
+                        "identifier": "height",
+                        "type": "number",
+                        "placeholder": "cm"
+                    },
+                    {
+                        "title": "Peso (kg)",
+                        "identifier": "weight",
+                        "type": "number",
+                        "placeholder": "kg"
+                    }
+                ]
+            },
+            {
+                "questions": [{
+                    "title": "Atividade física diária",
+                    "identifier": "physicalIntensityID",
+                    "type": "list",
+                    "info": "activity_info",
+                    "isMultipleSelection": false
+                }]
+            }
+        ]
+    },
+    {
+        "page": 1,
+        "panels": [{
+                "questions": [{
+                    "title": "Qual o teu objetivo?",
+                    "identifier": "desiredBalanceID",
+                    "type": "list"
+                }]
+            },
+            {
+                "questions": [{
+                    "title": "Alguma preferência nutricional especial?",
+                    "type": "buttons",
+                    "identifier": "preferences",
+                    "isMultipleSelection": true,
+                    "answers": [{
+                            "title": "Sim",
+                            "score": 1,
+                            "hasAnswers": true
+                        },
+                        {
+                            "title": "Não",
+                            "score": 0
+                        }
+                    ]
+                }]
+            },
+            {
+                "questions": [{
+                    "title": "Tens alguma restrição alimentar ou dieta especial?",
+                    "type": "buttons",
+                    "identifier": "intollerance",
+                    "isMultipleSelection": true,
+                    "answers": [{
+                            "title": "Sim",
+                            "score": 1,
+                            "hasAnswers": true
+                        },
+                        {
+                            "title": "Não",
+                            "score": 0
+                        }
+                    ]
+                }]
+            }
+        ]
+    },
+    {
+        "page": 2,
+        "panels": [{
+                "questions": [{
+                    "title": "Quantas refeições fazes por dia?",
+                    "identifier": "distributionByIntakeID",
+                    "type": "list"
+                }]
+            },
+            {
+                "questions": [
+                    {
+                        "title": "Quantos pratos desejas fazer ao almoço?",
+                        "identifier": "lunchDishes",
+                        "isMultipleSelection": true,
+                        "type": "list"
+                    },
+                    {
+                        "title": "Quantos pratos desejas fazer ao jantar?",
+                        "identifier": "dinnerDishes",
+                        "isMultipleSelection": true,
+                        "type": "list"
+                    }]
+            },
+            {
+                "questions": [{
+                    "title": "Desejas realizar jejum intermitente?",
+                    "type": "buttons",
+                    "identifier": "intermittentFastingID",
+                    "isMultipleSelection": false,
+                    "answers": [{
+                            "title": "Sim",
+                            "score": 1,
+                            "hasAnswers": true
+                        },
+                        {
+                            "title": "Não",
+                            "score": 0
+                        }
+                    ]
+                }]
+            }
+        ]
+    }
+]
