@@ -1,0 +1,45 @@
+
+/* Class = "UIButton"; configuration.subtitle = "Casa"; ObjectID = "9hX-BX-Axc"; */
+"9hX-BX-Axc.configuration.subtitle" = "Casa";
+
+/* Class = "UIButton"; normalTitle = "Regular"; ObjectID = "9hX-BX-Axc"; */
+"9hX-BX-Axc.normalTitle" = "Regular";
+
+/* Class = "UILabel"; text = "¿Dificultad de los ejercicios?"; ObjectID = "Aoz-1G-wZR"; */
+"Aoz-1G-wZR.text" = "¿Dificultad de los ejercicios?";
+
+/* Class = "UIButton"; configuration.subtitle = "Difícil"; ObjectID = "KdL-Pv-lcD"; */
+"KdL-Pv-lcD.configuration.subtitle" = "Difícil";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "KdL-Pv-lcD"; */
+"KdL-Pv-lcD.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.subtitle = "Fácil"; ObjectID = "gCc-T9-GO5"; */
+"gCc-T9-GO5.configuration.subtitle" = "Fácil";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "gCc-T9-GO5"; */
+"gCc-T9-GO5.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.subtitle = "Intermedia"; ObjectID = "ggh-bf-n9Z"; */
+"ggh-bf-n9Z.configuration.subtitle" = "Intermedia";
+
+/* Class = "UIButton"; normalTitle = "Regular"; ObjectID = "ggh-bf-n9Z"; */
+"ggh-bf-n9Z.normalTitle" = "Regular";
+
+/* Class = "UIButton"; normalTitle = "SIGUIENTE"; ObjectID = "nZl-GC-c2P"; */
+"nZl-GC-c2P.normalTitle" = "SIGUIENTE";
+
+/* Class = "UIButton"; configuration.subtitle = "Gimnasio"; ObjectID = "rRB-gS-VvR"; */
+"rRB-gS-VvR.configuration.subtitle" = "Gimnasio";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "rRB-gS-VvR"; */
+"rRB-gS-VvR.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "¿Dónde vas a entrenar?"; ObjectID = "uPi-De-xP5"; */
+"uPi-De-xP5.text" = "¿Dónde vas a entrenar?";
+
+/* Class = "UIButton"; configuration.subtitle = "Exterior"; ObjectID = "z4O-JR-hEB"; */
+"z4O-JR-hEB.configuration.subtitle" = "Exterior";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "z4O-JR-hEB"; */
+"z4O-JR-hEB.normalTitle" = "Button";

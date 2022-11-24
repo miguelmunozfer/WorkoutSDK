@@ -1,0 +1,27 @@
+
+/* Class = "UIButton"; configuration.subtitle = "Exterior"; ObjectID = "DgQ-4y-FBO"; */
+"DgQ-4y-FBO.configuration.subtitle" = "Outdoors";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "DgQ-4y-FBO"; */
+"DgQ-4y-FBO.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "ENVIAR"; ObjectID = "KBZ-gs-dEk"; */
+"KBZ-gs-dEk.normalTitle" = "SEND";
+
+/* Class = "UIButton"; configuration.subtitle = "Gimnasio"; ObjectID = "SkK-io-idz"; */
+"SkK-io-idz.configuration.subtitle" = "Gym";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "SkK-io-idz"; */
+"SkK-io-idz.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.subtitle = "Casa"; ObjectID = "asx-Mu-v8C"; */
+"asx-Mu-v8C.configuration.subtitle" = "Home";
+
+/* Class = "UIButton"; normalTitle = "Regular"; ObjectID = "asx-Mu-v8C"; */
+"asx-Mu-v8C.normalTitle" = "Regular";
+
+/* Class = "UILabel"; text = "Material disponible"; ObjectID = "bDx-ZJ-4TJ"; */
+"bDx-ZJ-4TJ.text" = "Available equipment";
+
+/* Class = "UILabel"; text = "¿Dónde vas a entrenar?"; ObjectID = "ci8-eC-uG0"; */
+"ci8-eC-uG0.text" = "Workout location";
