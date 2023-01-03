@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WorkoutSDK'
-  s.version          = '1.0'
+  s.version          = '1.1'
   s.summary          = 'Intelligent, automatic, comprehensive, adaptive Training System'
 
 # This description is used to generate tags and improve search results.
@@ -21,9 +21,9 @@ Pod::Spec.new do |s|
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Miguel Muñoz' => 'miguel.munoz@myvitale.com' }
-  s.source           = { :git => 'https://github.com/miguelmunozfer/WorkoutSDK.git', :tag => "1.0" }
+  s.source           = { :git => 'https://github.com/miguelmunozfer/WorkoutSDK.git', :tag => "1.1" }
   # s.social_media_url = 'https://twitter.com/mmunozfer'
-  # s.resource = 'VitaleSDK.xcframework'ç
+  # s.resource = 'VitaleSDK.xcframework'
   s.resources = "**/*.strings"
   s.ios.deployment_target = '11.0'
   s.vendored_frameworks = 'TrainingSDK.xcframework', 'WeFitterLib.xcframework'
