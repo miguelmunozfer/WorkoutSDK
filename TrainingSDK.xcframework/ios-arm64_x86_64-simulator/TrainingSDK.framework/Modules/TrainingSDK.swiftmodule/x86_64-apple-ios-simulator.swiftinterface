@@ -17,6 +17,7 @@ import SwiftDate
 import SwiftyJSON
 @_exported import TrainingSDK
 import UIKit
+import WeFitterLib
 import YoutubePlayer_in_WKWebView
 import _Concurrency
 public class Stat : Swift.Codable {
@@ -31,18 +32,10 @@ public class Stat : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
   required public init(from decoder: Swift.Decoder) throws
 }
-public enum TrainingType : Swift.Codable {
-  case diabetes, bariatrico
-  public static func == (a: TrainingSDK.TrainingType, b: TrainingSDK.TrainingType) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public func encode(to encoder: Swift.Encoder) throws
-  public var hashValue: Swift.Int {
-    get
-  }
-  public init(from decoder: Swift.Decoder) throws
-}
-extension UIKit.UIFont {
-  public static func jbs_registerFont(withFilenameString filenameString: Swift.String, bundle: Foundation.Bundle)
+@objc @_hasMissingDesignatedInitializers public class HCVimeoVideoExtractor : ObjectiveC.NSObject {
+  public static func fetchVideoURLFrom(url: Foundation.URL, completion: @escaping (_ video: TrainingSDK.HCVimeoVideo?, _ error: Swift.Error?) -> Swift.Void)
+  public static func fetchVideoURLFrom(id: Swift.String, completion: @escaping (_ video: TrainingSDK.HCVimeoVideo?, _ error: Swift.Error?) -> Swift.Void)
+  @objc deinit
 }
 public struct WorkoutSummary : Swift.Codable {
   public var title: Swift.String?
@@ -68,6 +61,8 @@ public struct WorkoutSummary : Swift.Codable {
   public func updateProfile(user: Swift.String, sex: Swift.String?, height: Swift.Int?, weigth: Swift.Int?, birthDate: Foundation.Date?, level: Swift.Int?, basalMetabolism: Swift.Int? = nil, operationDate: Foundation.Date? = nil, activityLevel: Swift.Int? = 1, generateProfile: Swift.Bool = false)
   public func showWorkoutPlan()
   public func getWorkoutPlan(_ completion: @escaping ((UIKit.UIViewController) -> ()))
+  public func showEcareController()
+  public func getEcareController() -> UIKit.UIViewController
   public func getStatsViewController(_ completion: @escaping ((UIKit.UIViewController) -> ()))
   public func getHelpController() -> UIKit.UIViewController
   public func showTrainingProfileViewController()
@@ -76,11 +71,7 @@ public struct WorkoutSummary : Swift.Codable {
   public func getTodayWorkout(_ completion: @escaping ((TrainingSDK.WorkoutSummary?) -> ()))
   public func showTodaytraining()
   public func getStatsBetween(startDate: Foundation.Date, endDate: Foundation.Date, _ completion: @escaping (([TrainingSDK.Stat]?) -> ()))
-  @objc deinit
-}
-@objc @_hasMissingDesignatedInitializers public class HCVimeoVideoExtractor : ObjectiveC.NSObject {
-  public static func fetchVideoURLFrom(url: Foundation.URL, completion: @escaping (_ video: TrainingSDK.HCVimeoVideo?, _ error: Swift.Error?) -> Swift.Void)
-  public static func fetchVideoURLFrom(id: Swift.String, completion: @escaping (_ video: TrainingSDK.HCVimeoVideo?, _ error: Swift.Error?) -> Swift.Void)
+  public func showWefitter(_ completion: @escaping ((UIKit.UIViewController) -> ()))
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class VitaleViewController : UIKit.UIViewController {
@@ -89,6 +80,9 @@ public struct WorkoutSummary : Swift.Codable {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
+}
+extension UIKit.UIFont {
+  public static func jbs_registerFont(withFilenameString filenameString: Swift.String, bundle: Foundation.Bundle)
 }
 public enum HCVimeoThumbnailQuality : Swift.String {
   case quality640
@@ -123,11 +117,21 @@ public enum HCVimeoVideoQuality : Swift.String {
   @objc override dynamic public init()
   @objc deinit
 }
-extension TrainingSDK.TrainingType : Swift.Equatable {}
-extension TrainingSDK.TrainingType : Swift.Hashable {}
+public enum TrainingType : Swift.Codable {
+  case diabetes, bariatrico
+  public static func == (a: TrainingSDK.TrainingType, b: TrainingSDK.TrainingType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public func encode(to encoder: Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: Swift.Decoder) throws
+}
 extension TrainingSDK.HCVimeoThumbnailQuality : Swift.Equatable {}
 extension TrainingSDK.HCVimeoThumbnailQuality : Swift.Hashable {}
 extension TrainingSDK.HCVimeoThumbnailQuality : Swift.RawRepresentable {}
 extension TrainingSDK.HCVimeoVideoQuality : Swift.Equatable {}
 extension TrainingSDK.HCVimeoVideoQuality : Swift.Hashable {}
 extension TrainingSDK.HCVimeoVideoQuality : Swift.RawRepresentable {}
+extension TrainingSDK.TrainingType : Swift.Equatable {}
+extension TrainingSDK.TrainingType : Swift.Hashable {}

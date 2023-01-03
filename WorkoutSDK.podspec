@@ -23,9 +23,10 @@ Pod::Spec.new do |s|
   s.author           = { 'Miguel Muñoz' => 'miguel.munoz@myvitale.com' }
   s.source           = { :git => 'https://github.com/miguelmunozfer/WorkoutSDK.git', :tag => "1.0" }
   # s.social_media_url = 'https://twitter.com/mmunozfer'
-  # s.resource = 'VitaleSDK.xcframework'
+  # s.resource = 'VitaleSDK.xcframework'ç
+  s.resources = "**/*.strings"
   s.ios.deployment_target = '11.0'
-  s.vendored_frameworks = 'TrainingSDK.xcframework' # Your XCFramework
+  s.vendored_frameworks = 'TrainingSDK.xcframework', 'WeFitterLib.xcframework'
   s.dependency 'Alamofire', '5.4.0'
   s.dependency 'SwiftyJSON', '5.0.0'
   s.dependency 'SwiftDate', '6.2.0'

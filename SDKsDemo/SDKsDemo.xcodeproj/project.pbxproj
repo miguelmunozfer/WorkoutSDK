@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		356EC89F37B4E87C7A42B817 /* Pods_SDKsDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F26D05FD6D36FAEBC364D7A6 /* Pods_SDKsDemo.framework */; };
+		F9877AAD2930C777005FA640 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9877AAB2930C777005FA640 /* LoginViewController.swift */; };
+		F9877AAE2930C777005FA640 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9877AAC2930C777005FA640 /* LoginViewController.xib */; };
+		F9877AB02930D2DA005FA640 /* Dataservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9877AAF2930D2DA005FA640 /* Dataservice.swift */; };
 		F9A62321292F612D00A4F185 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A62320292F612D00A4F185 /* AppDelegate.swift */; };
 		F9A62323292F612D00A4F185 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A62322292F612D00A4F185 /* SceneDelegate.swift */; };
 		F9A62325292F612D00A4F185 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A62324292F612D00A4F185 /* ViewController.swift */; };
@@ -19,6 +22,9 @@
 /* Begin PBXFileReference section */
 		16878756EFA3115B57C38A7E /* Pods-SDKsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDKsDemo.release.xcconfig"; path = "Target Support Files/Pods-SDKsDemo/Pods-SDKsDemo.release.xcconfig"; sourceTree = "<group>"; };
 		F26D05FD6D36FAEBC364D7A6 /* Pods_SDKsDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDKsDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9877AAB2930C777005FA640 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F9877AAC2930C777005FA640 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		F9877AAF2930D2DA005FA640 /* Dataservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dataservice.swift; sourceTree = "<group>"; };
 		F9A6231D292F612D00A4F185 /* SDKsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDKsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9A62320292F612D00A4F185 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9A62322292F612D00A4F185 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,7 +62,6 @@
 				FA6C94C4A054D4A0866BD99F /* Pods-SDKsDemo.debug.xcconfig */,
 				16878756EFA3115B57C38A7E /* Pods-SDKsDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -88,6 +93,9 @@
 				F9A62329292F613100A4F185 /* Assets.xcassets */,
 				F9A6232B292F613100A4F185 /* LaunchScreen.storyboard */,
 				F9A6232E292F613100A4F185 /* Info.plist */,
+				F9877AAB2930C777005FA640 /* LoginViewController.swift */,
+				F9877AAC2930C777005FA640 /* LoginViewController.xib */,
+				F9877AAF2930D2DA005FA640 /* Dataservice.swift */,
 			);
 			path = SDKsDemo;
 			sourceTree = "<group>";
@@ -152,6 +160,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9877AAE2930C777005FA640 /* LoginViewController.xib in Resources */,
 				F9A6232D292F613100A4F185 /* LaunchScreen.storyboard in Resources */,
 				F9A6232A292F613100A4F185 /* Assets.xcassets in Resources */,
 				F9A62328292F612D00A4F185 /* Main.storyboard in Resources */,
@@ -207,8 +216,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9877AAD2930C777005FA640 /* LoginViewController.swift in Sources */,
 				F9A62325292F612D00A4F185 /* ViewController.swift in Sources */,
 				F9A62321292F612D00A4F185 /* AppDelegate.swift in Sources */,
+				F9877AB02930D2DA005FA640 /* Dataservice.swift in Sources */,
 				F9A62323292F612D00A4F185 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

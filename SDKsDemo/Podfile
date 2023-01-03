@@ -4,7 +4,7 @@
 target 'SDKsDemo' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
+  pod 'NutritionIASDK', :git => 'https://github.com/miguelmunozfer/VitaleNutritionIASDK'
   pod 'WorkoutSDK', :git => 'https://github.com/miguelmunozfer/WorkoutSDK'
 end
 
