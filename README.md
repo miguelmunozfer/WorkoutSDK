@@ -38,41 +38,16 @@ end
 Use your MyVitale credentials for initiating SDK. Your user_id must be permanent and unique for each App user (any user id, including the ones you are already using in your system,  can be used).
 
 ```swift
-WorkoutSDK.sharedInstance.startSession(appID: "APP_ID", password: "PASSWORD")
+WorkoutSDK.sharedInstance.start(with: "USER_ID", appID: "APP_ID", password: "PASSWORD")
 
 ```
 
-### Config user
-
-WorkoutSDK.sharedInstance.updateProfile(user: "USER_ID", sex: "USER_GENDER", height: "USER_HEIGHT", weigth: "USER_WEIGHT", birthDate: USER_BIRTHDATE, level: LEVEL)
-
-
-### Sport profile
-
-```swift
-WorkoutSDK.sharedInstance.showTrainingProfileViewController()
-
-```
-
-### Show weekly workout plan
+### Show ecare module
 
 
 ```swift
-WorkoutSDK.sharedInstance.showWorkoutPlan()
+WorkoutSDK.sharedInstance.showEcareController()
 
-
-```
-
-### Custom configuration
-You can customize different PT module interfaces using this functions:
-
-
-#### Main color
-
-Main SDK colour can be personalized. All buttons and main elements of the PT module will turn the selected colour.
-
-```swift
-Training.sharedInstance.setMainColor(color: mainColor)
 
 ```
 
