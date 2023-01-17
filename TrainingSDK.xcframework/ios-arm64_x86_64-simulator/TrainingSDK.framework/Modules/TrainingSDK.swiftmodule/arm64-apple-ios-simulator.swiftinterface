@@ -58,7 +58,8 @@ public struct WorkoutSummary : Swift.Codable {
   public func setMainColor(color: Swift.String)
   public func isProfileFilled() -> Swift.Bool
   public func showVirtualPT()
-  public func updateProfile(user: Swift.String, sex: Swift.String?, height: Swift.Int?, weigth: Swift.Int?, birthDate: Foundation.Date?, level: Swift.Int?, basalMetabolism: Swift.Int? = nil, operationDate: Foundation.Date? = nil, activityLevel: Swift.Int? = 1, generateProfile: Swift.Bool = false)
+  public func updateProfile(user: Swift.String, sex: TrainingSDK.TrainingGender?, height: Swift.Int?, weigth: Swift.Int?, birthDate: Foundation.Date?, fragilityLevel: Swift.Int? = 1)
+  public func updateProfile(user: Swift.String, sex: TrainingSDK.TrainingGender?, height: Swift.Int?, weigth: Swift.Int?, birthDate: Foundation.Date?, level: Swift.Int?, basalMetabolism: Swift.Int? = nil, operationDate: Foundation.Date? = nil, activityLevel: Swift.Int? = 1, generateProfile: Swift.Bool = false)
   public func showWorkoutPlan()
   public func getWorkoutPlan(_ completion: @escaping ((UIKit.UIViewController) -> ()))
   public func showEcareController()
@@ -66,7 +67,7 @@ public struct WorkoutSummary : Swift.Codable {
   public func getStatsViewController(_ completion: @escaping ((UIKit.UIViewController) -> ()))
   public func getHelpController() -> UIKit.UIViewController
   public func showTrainingProfileViewController()
-  public func showTrainingProfileWith(user: Swift.String, sex: Swift.String?, height: Swift.Int?, weigth: Swift.Int?, birthDate: Foundation.Date?, level: Swift.Int?, basalMetabolism: Swift.Int? = nil, _ completion: @escaping ((UIKit.UIViewController?) -> ()))
+  public func showTrainingProfileWith(user: Swift.String, sex: TrainingSDK.TrainingGender?, height: Swift.Int?, weigth: Swift.Int?, birthDate: Foundation.Date?, level: Swift.Int?, basalMetabolism: Swift.Int? = nil, _ completion: @escaping ((UIKit.UIViewController?) -> ()))
   public func getTodayStats(_ completion: @escaping ((TrainingSDK.Stat?) -> ()))
   public func getTodayWorkout(_ completion: @escaping ((TrainingSDK.WorkoutSummary?) -> ()))
   public func showTodaytraining()
@@ -127,6 +128,14 @@ public enum TrainingType : Swift.Codable {
   }
   public init(from decoder: Swift.Decoder) throws
 }
+public enum TrainingGender : Swift.String, Swift.Codable {
+  case male, female
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 extension TrainingSDK.HCVimeoThumbnailQuality : Swift.Equatable {}
 extension TrainingSDK.HCVimeoThumbnailQuality : Swift.Hashable {}
 extension TrainingSDK.HCVimeoThumbnailQuality : Swift.RawRepresentable {}
@@ -135,3 +144,6 @@ extension TrainingSDK.HCVimeoVideoQuality : Swift.Hashable {}
 extension TrainingSDK.HCVimeoVideoQuality : Swift.RawRepresentable {}
 extension TrainingSDK.TrainingType : Swift.Equatable {}
 extension TrainingSDK.TrainingType : Swift.Hashable {}
+extension TrainingSDK.TrainingGender : Swift.Equatable {}
+extension TrainingSDK.TrainingGender : Swift.Hashable {}
+extension TrainingSDK.TrainingGender : Swift.RawRepresentable {}
