@@ -57,7 +57,7 @@
 "VrK-Pj-Kkt.text" = "Label";
 
 /* Class = "UINavigationItem"; title = "Ejercicios"; ObjectID = "WS7-7r-Duq"; */
-"WS7-7r-Duq.title" = "Exercises";
+"WS7-7r-Duq.title" = "Training";
 
 /* Class = "UIButton"; normalTitle = "40'"; ObjectID = "XhN-wu-TgE"; */
 "XhN-wu-TgE.normalTitle" = "40'";
@@ -111,7 +111,7 @@
 "rcm-0I-oKU.normalTitle" = "30'";
 
 /* Class = "UINavigationItem"; title = "Ejercicios"; ObjectID = "rqS-AL-ykS"; */
-"rqS-AL-ykS.title" = "Exercises";
+"rqS-AL-ykS.title" = "Training";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "wYG-TD-VBp"; */
 "wYG-TD-VBp.text" = "Label";
