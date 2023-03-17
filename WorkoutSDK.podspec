@@ -38,7 +38,8 @@ Pod::Spec.new do |s|
   s.dependency  'Charts', '3.6.0'
   s.dependency  "Hero"
   s.dependency  'JWTDecode', '~> 2.6'
-  s.swift_version = "5.0"
+  # s.swift_version = "5.0"
+  s.swift_versions = ['4.0', '4.2', '5.0']
   s.xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
 
 end
