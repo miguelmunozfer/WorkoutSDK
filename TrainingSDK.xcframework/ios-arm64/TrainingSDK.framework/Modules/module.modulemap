@@ -6,6 +6,6 @@ framework module TrainingSDK {
 }
 
 module TrainingSDK.Swift {
-    header "TrainingSDK-Swift.h"
-    requires objc
+  header "TrainingSDK-Swift.h"
+  requires objc
 }
