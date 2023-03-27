@@ -1880,21 +1880,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Int?",
+                "printedName": "Swift.String?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:11TrainingSDK14WorkoutSummaryV8durationSiSgvp",
-            "mangledName": "$s11TrainingSDK14WorkoutSummaryV8durationSiSgvp",
+            "usr": "s:11TrainingSDK14WorkoutSummaryV8durationSSSgvp",
+            "mangledName": "$s11TrainingSDK14WorkoutSummaryV8durationSSSgvp",
             "moduleName": "TrainingSDK",
             "declAttributes": [
               "HasInitialValue",
@@ -1911,21 +1911,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.Int?",
+                    "printedName": "Swift.String?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:11TrainingSDK14WorkoutSummaryV8durationSiSgvg",
-                "mangledName": "$s11TrainingSDK14WorkoutSummaryV8durationSiSgvg",
+                "usr": "s:11TrainingSDK14WorkoutSummaryV8durationSSSgvg",
+                "mangledName": "$s11TrainingSDK14WorkoutSummaryV8durationSSSgvg",
                 "moduleName": "TrainingSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -1943,21 +1943,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.Int?",
+                    "printedName": "Swift.String?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:11TrainingSDK14WorkoutSummaryV8durationSiSgvs",
-                "mangledName": "$s11TrainingSDK14WorkoutSummaryV8durationSiSgvs",
+                "usr": "s:11TrainingSDK14WorkoutSummaryV8durationSSSgvs",
+                "mangledName": "$s11TrainingSDK14WorkoutSummaryV8durationSSSgvs",
                 "moduleName": "TrainingSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -1974,8 +1974,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:11TrainingSDK14WorkoutSummaryV8durationSiSgvM",
-                "mangledName": "$s11TrainingSDK14WorkoutSummaryV8durationSiSgvM",
+                "usr": "s:11TrainingSDK14WorkoutSummaryV8durationSSSgvM",
+                "mangledName": "$s11TrainingSDK14WorkoutSummaryV8durationSSSgvM",
                 "moduleName": "TrainingSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -6698,98 +6698,98 @@
     {
       "filePath": "\/Users\/mmunozfer\/Documents\/TrainingSDKCode\/TrainingSDKCode\/SDKCode\/VitaleWorkout\/WorkoutModels.swift",
       "kind": "StringLiteral",
-      "offset": 524,
+      "offset": 527,
       "length": 10,
       "value": "\"calories\""
     },
     {
       "filePath": "\/Users\/mmunozfer\/Documents\/TrainingSDKCode\/TrainingSDKCode\/SDKCode\/VitaleWorkout\/WorkoutModels.swift",
       "kind": "StringLiteral",
-      "offset": 556,
+      "offset": 559,
       "length": 13,
       "value": "\"workoutType\""
     },
     {
       "filePath": "\/Users\/mmunozfer\/Documents\/TrainingSDKCode\/TrainingSDKCode\/SDKCode\/VitaleWorkout\/WorkoutModels.swift",
       "kind": "StringLiteral",
-      "offset": 613,
+      "offset": 616,
       "length": 7,
       "value": "\"class\""
     },
     {
       "filePath": "\/Users\/mmunozfer\/Documents\/TrainingSDKCode\/TrainingSDKCode\/SDKCode\/VitaleWorkout\/WorkoutModels.swift",
       "kind": "StringLiteral",
-      "offset": 688,
+      "offset": 691,
       "length": 13,
       "value": "\"description\""
     },
     {
       "filePath": "\/Users\/mmunozfer\/Documents\/TrainingSDKCode\/TrainingSDKCode\/SDKCode\/VitaleWorkout\/WorkoutModels.swift",
       "kind": "StringLiteral",
-      "offset": 743,
+      "offset": 746,
       "length": 27,
       "value": "\"alternativeClassAvailable\""
     },
     {
       "filePath": "\/Users\/mmunozfer\/Documents\/TrainingSDKCode\/TrainingSDKCode\/SDKCode\/VitaleWorkout\/WorkoutModels.swift",
       "kind": "StringLiteral",
-      "offset": 524,
+      "offset": 527,
       "length": 10,
       "value": "\"calories\""
     },
     {
       "filePath": "\/Users\/mmunozfer\/Documents\/TrainingSDKCode\/TrainingSDKCode\/SDKCode\/VitaleWorkout\/WorkoutModels.swift",
       "kind": "StringLiteral",
-      "offset": 556,
+      "offset": 559,
       "length": 13,
       "value": "\"workoutType\""
     },
     {
       "filePath": "\/Users\/mmunozfer\/Documents\/TrainingSDKCode\/TrainingSDKCode\/SDKCode\/VitaleWorkout\/WorkoutModels.swift",
       "kind": "StringLiteral",
-      "offset": 613,
+      "offset": 616,
       "length": 7,
       "value": "\"class\""
     },
     {
       "filePath": "\/Users\/mmunozfer\/Documents\/TrainingSDKCode\/TrainingSDKCode\/SDKCode\/VitaleWorkout\/WorkoutModels.swift",
       "kind": "StringLiteral",
-      "offset": 688,
+      "offset": 691,
       "length": 13,
       "value": "\"description\""
     },
     {
       "filePath": "\/Users\/mmunozfer\/Documents\/TrainingSDKCode\/TrainingSDKCode\/SDKCode\/VitaleWorkout\/WorkoutModels.swift",
       "kind": "StringLiteral",
-      "offset": 743,
+      "offset": 746,
       "length": 27,
       "value": "\"alternativeClassAvailable\""
     },
     {
       "filePath": "\/Users\/mmunozfer\/Documents\/TrainingSDKCode\/TrainingSDKCode\/SDKCode\/VitaleWorkout\/WorkoutModels.swift",
       "kind": "StringLiteral",
-      "offset": 946,
+      "offset": 949,
       "length": 7,
       "value": "\"class\""
     },
     {
       "filePath": "\/Users\/mmunozfer\/Documents\/TrainingSDKCode\/TrainingSDKCode\/SDKCode\/VitaleWorkout\/WorkoutModels.swift",
       "kind": "StringLiteral",
-      "offset": 946,
+      "offset": 949,
       "length": 7,
       "value": "\"class\""
     },
     {
       "filePath": "\/Users\/mmunozfer\/Documents\/TrainingSDKCode\/TrainingSDKCode\/SDKCode\/VitaleWorkout\/WorkoutModels.swift",
       "kind": "StringLiteral",
-      "offset": 1239,
+      "offset": 1242,
       "length": 13,
       "value": "\"description\""
     },
     {
       "filePath": "\/Users\/mmunozfer\/Documents\/TrainingSDKCode\/TrainingSDKCode\/SDKCode\/VitaleWorkout\/WorkoutModels.swift",
       "kind": "StringLiteral",
-      "offset": 1239,
+      "offset": 1242,
       "length": 13,
       "value": "\"description\""
     },

@@ -46,7 +46,7 @@ public struct WorkoutSummary : Swift.Codable {
   public var alternativeClassAvailable: Swift.Bool?
   public var kcal: Swift.String?
   public var descripcion: Swift.String?
-  public var duration: Swift.Int?
+  public var duration: Swift.String?
   public var url: Swift.String?
   public var day: Swift.Int?
   public func encode(to encoder: Swift.Encoder) throws
