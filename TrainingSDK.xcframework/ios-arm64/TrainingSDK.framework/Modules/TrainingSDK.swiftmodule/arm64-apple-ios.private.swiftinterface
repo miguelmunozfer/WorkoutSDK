@@ -1,12 +1,13 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TrainingSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
 import AVKit
 import Alamofire
-import Charts
 import CoreMIDI
+import DGCharts
+import DeveloperToolsSupport
 import Foundation
 import HealthKit
 import Instructions
@@ -15,6 +16,7 @@ import Localize_Swift
 import SafariServices
 import Swift
 import SwiftDate
+import SwiftUI
 import SwiftyJSON
 @_exported import TrainingSDK
 import UIKit
@@ -22,6 +24,7 @@ import WeFitterLib
 import YoutubePlayer_in_WKWebView
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 public class Stat : Swift.Codable {
   public var cal: Swift.Int?
   public var time: Swift.Int?
@@ -31,12 +34,12 @@ public class Stat : Swift.Codable {
   public init()
   public func statFromJson(_ json: Foundation.NSDictionary) -> TrainingSDK.Stat
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @objc @_hasMissingDesignatedInitializers public class HCVimeoVideoExtractor : ObjectiveC.NSObject {
-  public static func fetchVideoURLFrom(url: Foundation.URL, completion: @escaping (_ video: TrainingSDK.HCVimeoVideo?, _ error: Swift.Error?) -> Swift.Void)
-  public static func fetchVideoURLFrom(id: Swift.String, completion: @escaping (_ video: TrainingSDK.HCVimeoVideo?, _ error: Swift.Error?) -> Swift.Void)
+  public static func fetchVideoURLFrom(url: Foundation.URL, completion: @escaping (_ video: TrainingSDK.HCVimeoVideo?, _ error: (any Swift.Error)?) -> Swift.Void)
+  public static func fetchVideoURLFrom(id: Swift.String, completion: @escaping (_ video: TrainingSDK.HCVimeoVideo?, _ error: (any Swift.Error)?) -> Swift.Void)
   @objc deinit
 }
 public struct WorkoutSummary : Swift.Codable {
@@ -49,8 +52,8 @@ public struct WorkoutSummary : Swift.Codable {
   public var duration: Swift.String?
   public var url: Swift.String?
   public var day: Swift.Int?
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class WorkoutSDK {
   public static let sharedInstance: TrainingSDK.WorkoutSDK
@@ -58,11 +61,17 @@ public struct WorkoutSummary : Swift.Codable {
   public func startSession(appID: Swift.String, password: Swift.String)
   public func logout()
   public func setMainColor(color: Swift.String)
+  public func setNavigationBarColor(color: Swift.String)
+  public func setNavigationTintColor(color: Swift.String)
   public func isProfileFilled() -> Swift.Bool
   public func showVirtualPT()
   public func updateProfile(user: Swift.String, sex: TrainingSDK.TrainingGender?, height: Swift.Int?, weigth: Swift.Int?, birthDate: Foundation.Date?, fragilityLevel: Swift.Int? = 1)
+  public func updateProfile(sex: TrainingSDK.TrainingGender?, height: Swift.Int?, weigth: Swift.Int?, birthDate: Foundation.Date?, activityLevel: TrainingSDK.ActivityLevel? = .normal)
   public func updateProfile(user: Swift.String, sex: TrainingSDK.TrainingGender?, height: Swift.Int?, weigth: Swift.Int?, birthDate: Foundation.Date?, level: Swift.Int?, basalMetabolism: Swift.Int? = nil, operationDate: Foundation.Date? = nil, activityLevel: Swift.Int? = 1, generateProfile: Swift.Bool = false)
   public func showWorkoutPlan()
+  public func showStats()
+  public func showWearables()
+  public func showProfile()
   public func getWorkoutPlan(_ completion: @escaping ((UIKit.UIViewController) -> ()))
   public func showEcareController()
   public func getEcareController() -> UIKit.UIViewController
@@ -124,17 +133,25 @@ public enum TrainingType : Swift.Codable {
   case diabetes, bariatrico
   public static func == (a: TrainingSDK.TrainingType, b: TrainingSDK.TrainingType) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   public var hashValue: Swift.Int {
     get
   }
-  public init(from decoder: Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public enum TrainingGender : Swift.String, Swift.Codable {
   case male, female
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
+    get
+  }
+}
+public enum ActivityLevel : Swift.Int, Swift.Codable {
+  case veryLight, light, normal, hard, veryHard
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
     get
   }
 }
@@ -149,3 +166,6 @@ extension TrainingSDK.TrainingType : Swift.Hashable {}
 extension TrainingSDK.TrainingGender : Swift.Equatable {}
 extension TrainingSDK.TrainingGender : Swift.Hashable {}
 extension TrainingSDK.TrainingGender : Swift.RawRepresentable {}
+extension TrainingSDK.ActivityLevel : Swift.Equatable {}
+extension TrainingSDK.ActivityLevel : Swift.Hashable {}
+extension TrainingSDK.ActivityLevel : Swift.RawRepresentable {}

@@ -1,0 +1,15 @@
+[
+    {
+        "title": "Mögen Sie angeleitete Aktivitäten?",
+        "answers":[
+            {
+                "title": "Ja",
+                "score": 0
+            },
+            {
+                "title": "Nein",
+                "score": 1
+            }
+        ]
+    }
+]
