@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WorkoutSDK'
-  s.version          = '1.2'
+  s.version          = '1.2.1'
   s.summary          = 'Intelligent, automatic, comprehensive, adaptive Training System'
 
 # This description is used to generate tags and improve search results.
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Miguel Muñoz' => 'miguel.munoz@myvitale.com' }
-  s.source           = { :git => 'https://github.com/miguelmunozfer/WorkoutSDK.git', :tag => "1.2" }
+  s.source           = { :git => 'https://github.com/miguelmunozfer/WorkoutSDK.git', :tag => "1.2.1" }
   # s.social_media_url = 'https://twitter.com/mmunozfer'
   # s.resource = 'VitaleSDK.xcframework'
   #s.resources = "**/en.lproj"
@@ -36,7 +36,7 @@ Pod::Spec.new do |s|
   s.dependency  'YoutubePlayer-in-WKWebView', '0.3.4'
   s.dependency  'HCVimeoVideoExtractor', '0.0.1'
   s.dependency  'Instructions', '1.3.1'
-  s.dependency  'Charts', '3.6.0'
+  s.dependency  'DGCharts', '5.0.0'
   s.dependency  "Hero"
   s.dependency  'JWTDecode', '~> 2.6'
   # s.swift_version = "5.0"
