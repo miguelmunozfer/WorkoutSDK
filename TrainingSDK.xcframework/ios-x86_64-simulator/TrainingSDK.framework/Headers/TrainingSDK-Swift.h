@@ -319,6 +319,9 @@ SWIFT_CLASS("_TtC11TrainingSDK21HCVimeoVideoExtractor")
 
 
 
+
+
+
 @class NSString;
 @class NSBundle;
 @class NSCoder;

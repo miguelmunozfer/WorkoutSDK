@@ -1,0 +1,33 @@
+[{
+    "page": 0,
+    "panels": [{
+        "questions": [
+            {
+                "title": "Dificultad de ejercicios deseada",
+                "type": "list",
+                "info": "activity_info",
+                "identifier": "exerciseDifficulty",
+                "isMultipleSelection": false
+            },
+            {
+                "title": "¿Dónde quieres entrenar?",
+                "identifier": "trainingPlace",
+                "type": "list",
+                "isMultipleSelection": false
+
+            },
+            {
+                "title": "¿Dispones de algún material de entrenamiento?",
+                "type": "list",
+                "identifier": "equipment",
+                "isMultipleSelection": true
+            },
+            {
+                "title": "Clases dirigidas",
+                "type": "list",
+                "identifier": "classes",
+                "isMultipleSelection": true
+            }
+        ]
+    }]
+}]
